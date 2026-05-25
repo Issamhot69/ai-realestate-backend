@@ -17,7 +17,7 @@ const paymentRoutes = require('./modules/payments/payment.routes');
 const favoriteRoutes = require('./modules/users/favorite.routes');
 const contractRoutes = require('./modules/commissions/contract.routes');
 const reportRoutes = require('./modules/ai/report.routes');
-dotenv.config();
+require('dotenv').config();
 connectDB();
 
 const app = express();
